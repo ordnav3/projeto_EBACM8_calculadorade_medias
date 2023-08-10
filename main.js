@@ -48,7 +48,7 @@ function atualizatabela() {
 function atualizamediafinal() {
     const mediafinal = calculamediafinal()
 
-    document.getElementById('mediafinal-valor').innerHTML = mediafinal
+    document.getElementById('mediafinal-valor').innerHTML = mediafinal.toFixed(2)
     document.getElementById('mediafinal-resultado').innerHTML = mediafinal >= notaminima ? spanaprovado : spanreprovado
 }
 
